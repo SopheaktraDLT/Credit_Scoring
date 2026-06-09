@@ -36,45 +36,34 @@ credit_scoring/
 │   │
 │   ├── config/ #Application settings, constants, and database configuration.
 │   │
-│   ├── database/ #Database connection and assessment record management.
+│   ├── database/
+│   │   ├── db_manager.py #Database connection and assessment record management.
+│   │   └── database_schema.sql #Database schema, views, and stored procedures.
 │   │
 │   ├── prediction/
 │   │   ├── model_loader.py #Loads trained models and preprocessors.
 │   │   └── predictor.py #Handles prediction generation and model inference.
 │   │
-│   ├── scoring/
+│   ├── scoring/ #Credit scoring logic, business rules, and score calculation.
 │   │   ├── base.py
 │   │   ├── rules.py
 │   │   ├── breakdown.py
 │   │   └── utils.py
-│   │   └── Credit scoring logic, business rules, and score calculation.
+│   │    
 │   │
-│   ├── ui/
+│   ├── ui/ # User interface components and application pages.
 │   │   ├── components.py
 │   │   ├── helpers.py
 │   │   └── pages/
 │   │       ├── history.py
 │   │       ├── new_user_form.py
 │   │       └── old_user_form.py
-│   │
-│   │   └── User interface components and application pages.
-│   │
-│   └── utils/
-│       └── Shared utility functions used across the project.
 │
-├── database_schema.sql
-│   └── Database schema, views, and stored procedures.
+├── requirements.txt #Python dependencies required to run the application.
 │
-├── requirements.txt
-│   └── Python dependencies required to run the application.
+├── README.md #Project documentation.
 │
-├── README.md
-│   └── Project documentation.
-│
-└── .gitignore
-    └── Files and folders excluded from Git tracking.
-```
-
+└── .gitignore #Files and folders excluded from Git tracking.
 ```
 
 ## Workflow
