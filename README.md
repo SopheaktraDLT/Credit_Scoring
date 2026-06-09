@@ -16,21 +16,65 @@ AI-Based Credit Scoring System is a Streamlit application for loan decision supp
 ## Project Structure
 
 ```text
+## Project Structure
+
+```text
 credit_scoring/
+│
 ├── app.py
+│   └── Main Streamlit application entry point.
+│
 ├── model/
 │   ├── new_user/
 │   └── old_user/
+│
 ├── preprocessor/
-│   ├── new_user/
-│   └── old_user/
+│   ├── new_user/ #preprocessing pipeline for new customer assessment.
+│   └── old_user/ #preprocessing pipeline for existing customer assessment.
+│
 ├── src/
-│   ├── config/
-│   ├── database/
+│   │
+│   ├── config/ #Application settings, constants, and database configuration.
+│   │
+│   ├── database/ #Database connection and assessment record management.
+│   │
 │   ├── prediction/
+│   │   ├── model_loader.py #Loads trained models and preprocessors.
+│   │   └── predictor.py #Handles prediction generation and model inference.
+│   │
 │   ├── scoring/
-│   └── ui/
-└── requirements.txt
+│   │   ├── base.py
+│   │   ├── rules.py
+│   │   ├── breakdown.py
+│   │   └── utils.py
+│   │   └── Credit scoring logic, business rules, and score calculation.
+│   │
+│   ├── ui/
+│   │   ├── components.py
+│   │   ├── helpers.py
+│   │   └── pages/
+│   │       ├── history.py
+│   │       ├── new_user_form.py
+│   │       └── old_user_form.py
+│   │
+│   │   └── User interface components and application pages.
+│   │
+│   └── utils/
+│       └── Shared utility functions used across the project.
+│
+├── database_schema.sql
+│   └── Database schema, views, and stored procedures.
+│
+├── requirements.txt
+│   └── Python dependencies required to run the application.
+│
+├── README.md
+│   └── Project documentation.
+│
+└── .gitignore
+    └── Files and folders excluded from Git tracking.
+```
+
 ```
 
 ## Workflow
