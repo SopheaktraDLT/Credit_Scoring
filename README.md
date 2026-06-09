@@ -16,9 +16,6 @@ AI-Based Credit Scoring System is a Streamlit application for loan decision supp
 ## Project Structure
 
 ```text
-## Project Structure
-
-```text
 credit_scoring/
 │
 ├── app.py
@@ -26,44 +23,58 @@ credit_scoring/
 │
 ├── model/
 │   ├── new_user/
+│   │   └── Trained machine learning models for new customers.
 │   └── old_user/
+│       └── Trained machine learning models for existing customers.
 │
 ├── preprocessor/
-│   ├── new_user/ #preprocessing pipeline for new customer assessment.
-│   └── old_user/ #preprocessing pipeline for existing customer assessment.
+│   ├── new_user/
+│   │   └── Saved preprocessing pipeline for new customer assessment.
+│   └── old_user/
+│       └── Saved preprocessing pipeline for existing customer assessment.
 │
 ├── src/
 │   │
-│   ├── config/ #Application settings, constants, and database configuration.
-│   │
-│   ├── database/
-│   │   ├── db_manager.py #Database connection and assessment record management.
-│   │   └── database_schema.sql #Database schema, views, and stored procedures.
+│   ├── config/
+│   │   └── Application settings, constants, and database configuration.
 │   │
 │   ├── prediction/
-│   │   ├── model_loader.py #Loads trained models and preprocessors.
-│   │   └── predictor.py #Handles prediction generation and model inference.
+│   │   ├── model_loader.py
+│   │   │   └── Loads trained models and preprocessors.
+│   │   └── predictor.py
+│   │       └── Handles prediction generation and model inference.
 │   │
-│   ├── scoring/ #Credit scoring logic, business rules, and score calculation.
+│   ├── scoring/
 │   │   ├── base.py
 │   │   ├── rules.py
 │   │   ├── breakdown.py
 │   │   └── utils.py
-│   │    
+│   │   └── Credit scoring logic, business rules, and score calculation.
 │   │
-│   ├── ui/ # User interface components and application pages.
+│   ├── ui/
 │   │   ├── components.py
 │   │   ├── helpers.py
 │   │   └── pages/
 │   │       ├── history.py
 │   │       ├── new_user_form.py
 │   │       └── old_user_form.py
+│   │   └── User interface components and application pages.
+│   └──  
 │
-├── requirements.txt #Python dependencies required to run the application.
+├── database.sql
+│   └── db_manager.py
+│        └──Database schema, views, and stored procedures.
+│   └── database_schema.sql
+│        └── Database connection and assessment record management.
 │
-├── README.md #Project documentation.
+├── requirements.txt
+│   └── Python dependencies required to run the application.
 │
-└── .gitignore #Files and folders excluded from Git tracking.
+├── README.md
+│   └── Project documentation.
+│
+└── .gitignore
+    └── Files and folders excluded from Git tracking.
 ```
 
 ## Workflow
