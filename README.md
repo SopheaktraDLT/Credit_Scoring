@@ -1,4 +1,4 @@
-# Credit Scoring
+# Credit Scoring System
 
 AI-Based Credit Scoring System is a Streamlit application for loan decision support. It evaluates new and existing applicants, predicts default risk with trained machine learning models, calculates a transparent rule-based score breakdown, and stores assessment results in a MySQL database.
 
